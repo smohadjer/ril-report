@@ -7,6 +7,9 @@ const rows: GridRowsProp = [
   { id: 1, col1: 'Hello', col2: 'World' },
   { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
   { id: 3, col1: 'MUI', col2: 'is Amazing' },
+  { id: 4, col1: 'Hello', col2: 'World' },
+  { id: 5, col1: 'DataGridPro', col2: 'is Awesome' },
+  { id: 6, col1: 'MUI', col2: 'is Amazing' },
 ];
 
 const columns: GridColDef[] = [
