@@ -1,26 +1,38 @@
 import React from 'react';
 import './App.css';
-import { DataGridPro, GridRowsProp, GridColDef } from '@mui/x-data-grid-pro';
+import MyComponent from './MyComponent';
 
-const rows: GridRowsProp = [
-  { id: 1, col1: 'Hello', col2: 'World' },
-  { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
-  { id: 3, col1: 'MUI', col2: 'is Amazing' },
-  { id: 4, col1: 'Hello', col2: 'World' },
-  { id: 5, col1: 'DataGridPro', col2: 'is Awesome' },
-  { id: 6, col1: 'MUI', col2: 'is Amazing' },
-];
+interface MyObject {
+  id: number;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  email: string;
+  company: string;
+  address: string;
+  city: string;
+  postalZip: string;
+  region: string;
+  country: string;
+}
 
-const columns: GridColDef[] = [
-  { field: 'col1', headerName: 'Column 1', width: 150 },
-  { field: 'col2', headerName: 'Column 2', width: 150 },
-];
+interface RowData {
+  id: number;
+  col1: string;
+  col2: string;
+  col3: string;
+  col4: string;
+  col5: string;
+  col6: string;
+  col7: string;
+  col8: string;
+  col9: string;
+  col10: string;
+}
 
 function App() {
   return (
-    <div style={{ height: 300, width: '100%' }}>
-      <DataGridPro rows={rows} columns={columns} />
-    </div>
+    <MyComponent />
   );
 }
 
