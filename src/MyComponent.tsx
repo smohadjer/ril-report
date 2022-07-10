@@ -1,7 +1,5 @@
 import React from 'react';
 import { DataGridPro, GridRowsProp, GridColDef } from '@mui/x-data-grid-pro';
-import PropTypes from 'prop-types';
-import { MenuUnstyledProps } from '@mui/base';
 
 interface MyObject {
   id: number;
